@@ -6,8 +6,8 @@ class FriendshipsController < ApplicationController
   end
 
   def destroy
-    User.find(params[:friendship][:friend_b_id].to_i).inverse_friendships.where(friend_a_id: current_user.id).delete_all 
-    redirect_to User.find(params[:friendship][:friend_b_id])
+    #User.find(params[:friendship][:friend_b_id].to_i).inverse_friendships.where(friend_a_id: current_user.id).delete_all 
+    #redirect_to User.find(params[:friendship][:friend_b_id])
   end
 
   private 

@@ -1,0 +1,5 @@
+Welcome to Odin Facebook!
+
+Dear <%=@user.name%>
+Thank you for joining the Odin Facebook community! You can now share your stories, make new friends, and chat with people all over the globe with just one click away.
+Our team hopes that you will enjoy all the conveniences offered at Odin Facebook!

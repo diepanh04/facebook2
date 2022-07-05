@@ -50,9 +50,9 @@ class User < ApplicationRecord
     end
   end
 
-  # def getFriendships()
-  #   return self.friendships.concat(self.inverse_friendships)
-  # end 
+  def getFriendships()
+    return self.friendships.concat(self.inverse_friendships)
+  end 
 
   def is_friend(target)
     i = self.friendships.where(friend_a_id: self.id, friend_b_id: target.id).length
